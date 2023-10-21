@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --bg-colorText: #323238;
+    --bg-colorOne: #E1E1E6;
+    --bg-colorTwo: #02799D;
+
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+#page{
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+main{
+    display: flex;
+    gap: 19.2rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+#timer{
+    text-align: center;
+    
+    padding-top: 5.0rem;
+}
+
+#timer article{
+    padding-top: 1.0rem ;
+
+    display: flex;
+    gap: 4.0rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#timer article button{
+    background: none;
+    border: none;
+}
+
+
+
+span{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.6rem;
+    font-style: normal;
+    font-weight: 500;
+
+    color: var(--bg-colorText);
+
+}
+
+#controls{    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0.5rem;
+}
+
+
+
+#controls article button{
+    width: 13.8rem;
+    height: 15.2rem;
+
+    border-radius: 2.4rem;
+    border: none;
+
+    margin: .5rem;
+    
+}
+
+#controls article:nth-child(1) button:nth-child(2){
+    background: var(--bg-colorTwo);
+}
+
+
+html.light .buttonPlay,
+html:not(.light) .buttonPause{
+    display: none;
+}

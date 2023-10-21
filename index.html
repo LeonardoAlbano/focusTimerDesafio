@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="shortcut icon" href="#">
+
+    <script type="module" src="./src/main.js"></script>
+    <title>Facous Timer V2</title>
+    
+</head>
+<body>
+    <div id="page">
+        <main>
+            <section id="timer">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+
+                <article id="controlsButtonsTimer">
+                    <button class="buttonPlay" data-action="toggleRunning" > <img  data-action="toggleRunning" src="./assets/play.svg" alt=""></button>
+                    <button class="buttonPause" data-action="toggleRunning"> <img data-action="toggleRunning" src="./assets/buttonPause.svg" alt=""></button>
+                    <button data-action="toggleStop" > <img data-action="toggleStop" src="./assets/stop.svg" alt=""></button>
+                    <button id="aumentar" data-action="aumentar" > <img data-action="aumentar" src="./assets/aumentar.svg" alt=""></button>
+                    <button id="diminuir" data-action="diminuir"> <img data-action="diminuir" src="./assets/diminuir.svg" alt=""></button>       
+                </article>
+            </section>
+
+            <section id="controls">
+                <article id="controlsOne">
+                    <button data-action="arvore"> <img data-action="arvore"  src="./assets/arvore.svg" alt=""></button>
+                    <button data-action="nuvem"> <img data-action="nuvem" src="./assets/nuvem.svg" alt=""></button>
+                </article>
+
+                <article id="controlsTwo">
+                    <button data-action="casa"> <img data-action="casa" src="./assets/casa.svg" alt=""></button>
+                    <button data-action="fogo"> <img data-action="fogo" src="./assets/fogo.svg" alt=""></button>
+                </article>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
+
